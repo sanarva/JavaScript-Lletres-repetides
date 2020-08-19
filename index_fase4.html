@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This application is created to work with arrays, map function...">
+
+    <title>FASE4</title>
+
+</head>
+
+<body>
+    <script>
+        function fase4() {
+            const NAMEARRAY = ["S", "a", "n", "d", "r", "a"];
+            const SURNAMEARRAY = ["A", "r", "c", "a", "s"]
+            let fullName = [];
+
+            let i;
+            const SPACE = " ";
+
+            for (i = 0; i < NAMEARRAY.length; i++) {
+                fullName.push(NAMEARRAY[i])
+            }
+
+            fullName.push(SPACE);
+
+
+            for (i = 0; i < SURNAMEARRAY.length; i++) {
+                fullName.push(SURNAMEARRAY[i])
+            }
+
+            console.log(fullName);
+        }
+
+        fase4();
+
+    </script>
+
+</body>
+
+</html>
