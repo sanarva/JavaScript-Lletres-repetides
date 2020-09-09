@@ -13,20 +13,20 @@
 <body>
     <script>
         function fase3() {
-            const NAMEARRAY = ["s", "a", "n", "d", "r", "a"];
-            let mapLetters = {};
-            let i = 0;
-            let letter = " ";
 
-            for (i; i < NAMEARRAY.length; i++) {
-                letter = NAMEARRAY[i];
-                if (typeof mapLetters[letter] === "undefined") {
-                    mapLetters[letter] = 1;
+            const NAMEARRAY = ["S", "a", "n", "d", "r", "a"];
+            let arrayMap = [];
+
+            NAMEARRAY.map(letter => {
+                if (arrayMap[letter] === undefined) {
+                    arrayMap[letter] = 1;
                 } else {
-                    mapLetters[letter]++;
+                    arrayMap[letter] += 1;
                 }
-            }
-            console.log(mapLetters);
+            });
+
+            console.log(arrayMap);
+
         }
 
         fase3();
